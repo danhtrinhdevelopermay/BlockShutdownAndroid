@@ -1,0 +1,187 @@
+2025-12-04T13:50:25.1626958Z Current runner version: '2.329.0'
+2025-12-04T13:50:25.1652467Z ##[group]Runner Image Provisioner
+2025-12-04T13:50:25.1653264Z Hosted Compute Agent
+2025-12-04T13:50:25.1653789Z Version: 20251124.448
+2025-12-04T13:50:25.1654539Z Commit: fda5086b43ec66ade217e5fcd18146c879571177
+2025-12-04T13:50:25.1655244Z Build Date: 2025-11-24T21:16:26Z
+2025-12-04T13:50:25.1655835Z ##[endgroup]
+2025-12-04T13:50:25.1656343Z ##[group]Operating System
+2025-12-04T13:50:25.1656985Z Ubuntu
+2025-12-04T13:50:25.1657434Z 24.04.3
+2025-12-04T13:50:25.1657888Z LTS
+2025-12-04T13:50:25.1658405Z ##[endgroup]
+2025-12-04T13:50:25.1658908Z ##[group]Runner Image
+2025-12-04T13:50:25.1659549Z Image: ubuntu-24.04
+2025-12-04T13:50:25.1660241Z Version: 20251126.144.1
+2025-12-04T13:50:25.1662070Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251126.144/images/ubuntu/Ubuntu2404-Readme.md
+2025-12-04T13:50:25.1664541Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251126.144
+2025-12-04T13:50:25.1665546Z ##[endgroup]
+2025-12-04T13:50:25.1666723Z ##[group]GITHUB_TOKEN Permissions
+2025-12-04T13:50:25.1668530Z Contents: read
+2025-12-04T13:50:25.1669069Z Metadata: read
+2025-12-04T13:50:25.1669664Z Packages: read
+2025-12-04T13:50:25.1670164Z ##[endgroup]
+2025-12-04T13:50:25.1672491Z Secret source: Actions
+2025-12-04T13:50:25.1673315Z Prepare workflow directory
+2025-12-04T13:50:25.1990598Z Prepare all required actions
+2025-12-04T13:50:25.2028866Z Getting action download info
+2025-12-04T13:50:25.5662941Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2025-12-04T13:50:25.8615386Z Download action repository 'actions/setup-java@v4' (SHA:c1e323688fd81a25caa38c78aa6df2d33d3e20d9)
+2025-12-04T13:50:26.1631054Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+2025-12-04T13:50:26.2627627Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2025-12-04T13:50:26.4915376Z Complete job name: Build APK
+2025-12-04T13:50:26.5708072Z ##[group]Run actions/checkout@v4
+2025-12-04T13:50:26.5709347Z with:
+2025-12-04T13:50:26.5710260Z   repository: danhtrinhdevelopermay/BlockShutdownAndroid
+2025-12-04T13:50:26.5711899Z   token: ***
+2025-12-04T13:50:26.5712615Z   ssh-strict: true
+2025-12-04T13:50:26.5713357Z   ssh-user: git
+2025-12-04T13:50:26.5714107Z   persist-credentials: true
+2025-12-04T13:50:26.5714956Z   clean: true
+2025-12-04T13:50:26.5715712Z   sparse-checkout-cone-mode: true
+2025-12-04T13:50:26.5716631Z   fetch-depth: 1
+2025-12-04T13:50:26.5717367Z   fetch-tags: false
+2025-12-04T13:50:26.5718130Z   show-progress: true
+2025-12-04T13:50:26.5718903Z   lfs: false
+2025-12-04T13:50:26.5719590Z   submodules: false
+2025-12-04T13:50:26.5720359Z   set-safe-directory: true
+2025-12-04T13:50:26.5721572Z ##[endgroup]
+2025-12-04T13:50:26.6800846Z Syncing repository: danhtrinhdevelopermay/BlockShutdownAndroid
+2025-12-04T13:50:26.6804307Z ##[group]Getting Git version info
+2025-12-04T13:50:26.6806016Z Working directory is '/home/runner/work/BlockShutdownAndroid/BlockShutdownAndroid'
+2025-12-04T13:50:26.6808138Z [command]/usr/bin/git version
+2025-12-04T13:50:26.6894561Z git version 2.52.0
+2025-12-04T13:50:26.6921905Z ##[endgroup]
+2025-12-04T13:50:26.6935918Z Temporarily overriding HOME='/home/runner/work/_temp/29c9ffb5-d8cd-4a57-97a7-3a86bf8f11d2' before making global git config changes
+2025-12-04T13:50:26.6938603Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-04T13:50:26.6949054Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/BlockShutdownAndroid/BlockShutdownAndroid
+2025-12-04T13:50:26.6990037Z Deleting the contents of '/home/runner/work/BlockShutdownAndroid/BlockShutdownAndroid'
+2025-12-04T13:50:26.6993508Z ##[group]Initializing the repository
+2025-12-04T13:50:26.6998911Z [command]/usr/bin/git init /home/runner/work/BlockShutdownAndroid/BlockShutdownAndroid
+2025-12-04T13:50:26.7138137Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-12-04T13:50:26.7140460Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2025-12-04T13:50:26.7143231Z hint: to use in all of your new repositories, which will suppress this warning,
+2025-12-04T13:50:26.7145840Z hint: call:
+2025-12-04T13:50:26.7147095Z hint:
+2025-12-04T13:50:26.7148678Z hint: 	git config --global init.defaultBranch <name>
+2025-12-04T13:50:26.7150760Z hint:
+2025-12-04T13:50:26.7152761Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-12-04T13:50:26.7155986Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-12-04T13:50:26.7158421Z hint:
+2025-12-04T13:50:26.7159622Z hint: 	git branch -m <name>
+2025-12-04T13:50:26.7160940Z hint:
+2025-12-04T13:50:26.7162990Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-12-04T13:50:26.7165412Z Initialized empty Git repository in /home/runner/work/BlockShutdownAndroid/BlockShutdownAndroid/.git/
+2025-12-04T13:50:26.7169600Z [command]/usr/bin/git remote add origin https://github.com/danhtrinhdevelopermay/BlockShutdownAndroid
+2025-12-04T13:50:26.7195690Z ##[endgroup]
+2025-12-04T13:50:26.7197049Z ##[group]Disabling automatic garbage collection
+2025-12-04T13:50:26.7198886Z [command]/usr/bin/git config --local gc.auto 0
+2025-12-04T13:50:26.7228018Z ##[endgroup]
+2025-12-04T13:50:26.7229934Z ##[group]Setting up auth
+2025-12-04T13:50:26.7234849Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-12-04T13:50:26.7264183Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-12-04T13:50:26.7644125Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-04T13:50:26.7677534Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-12-04T13:50:26.7893259Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-04T13:50:26.7925562Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2025-12-04T13:50:26.8152207Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-12-04T13:50:26.8184792Z ##[endgroup]
+2025-12-04T13:50:26.8186083Z ##[group]Fetching the repository
+2025-12-04T13:50:26.8193904Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2acc113c267a99c47afb30040c1077ecab2bb46f:refs/remotes/origin/main
+2025-12-04T13:50:27.0474718Z From https://github.com/danhtrinhdevelopermay/BlockShutdownAndroid
+2025-12-04T13:50:27.0477981Z  * [new ref]         2acc113c267a99c47afb30040c1077ecab2bb46f -> origin/main
+2025-12-04T13:50:27.0508012Z ##[endgroup]
+2025-12-04T13:50:27.0510015Z ##[group]Determining the checkout info
+2025-12-04T13:50:27.0511824Z ##[endgroup]
+2025-12-04T13:50:27.0514900Z [command]/usr/bin/git sparse-checkout disable
+2025-12-04T13:50:27.0556887Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-12-04T13:50:27.0582959Z ##[group]Checking out the ref
+2025-12-04T13:50:27.0586087Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-12-04T13:50:27.0678856Z Switched to a new branch 'main'
+2025-12-04T13:50:27.0680754Z branch 'main' set up to track 'origin/main'.
+2025-12-04T13:50:27.0688937Z ##[endgroup]
+2025-12-04T13:50:27.0723580Z [command]/usr/bin/git log -1 --format=%H
+2025-12-04T13:50:27.0746348Z 2acc113c267a99c47afb30040c1077ecab2bb46f
+2025-12-04T13:50:27.1078147Z ##[group]Run actions/setup-java@v4
+2025-12-04T13:50:27.1079290Z with:
+2025-12-04T13:50:27.1080007Z   distribution: zulu
+2025-12-04T13:50:27.1080856Z   java-version: 17
+2025-12-04T13:50:27.1082162Z   java-package: jdk
+2025-12-04T13:50:27.1082962Z   check-latest: false
+2025-12-04T13:50:27.1083798Z   server-id: github
+2025-12-04T13:50:27.1084647Z   server-username: GITHUB_ACTOR
+2025-12-04T13:50:27.1085666Z   server-password: GITHUB_TOKEN
+2025-12-04T13:50:27.1086602Z   overwrite-settings: true
+2025-12-04T13:50:27.1087595Z   job-status: success
+2025-12-04T13:50:27.1088688Z   token: ***
+2025-12-04T13:50:27.1089409Z ##[endgroup]
+2025-12-04T13:50:27.3187501Z ##[group]Installed distributions
+2025-12-04T13:50:27.3213645Z Trying to resolve the latest version from remote
+2025-12-04T13:50:27.4070924Z Resolved latest version as 17.0.17+10
+2025-12-04T13:50:27.4072600Z Trying to download...
+2025-12-04T13:50:27.4074537Z Downloading Java 17.0.17+10 (Zulu) from https://cdn.azul.com/zulu/bin/zulu17.62.19-ca-crac-jdk17.0.17-linux_x64.tar.gz ...
+2025-12-04T13:50:29.7174508Z Extracting Java archive...
+2025-12-04T13:50:29.7272644Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/da1906de-bdee-450e-b828-dbfe214d5e7d -f /home/runner/work/_temp/8c343f54-eb7c-4e4e-a932-c208de190dae
+2025-12-04T13:50:32.4234529Z Java 17.0.17+10 was downloaded
+2025-12-04T13:50:32.4235105Z Setting Java 17.0.17+10 as the default
+2025-12-04T13:50:32.4244934Z Creating toolchains.xml for JDK version 17 from zulu
+2025-12-04T13:50:32.4327245Z Writing to /home/runner/.m2/toolchains.xml
+2025-12-04T13:50:32.4327710Z 
+2025-12-04T13:50:32.4327979Z Java configuration:
+2025-12-04T13:50:32.4328492Z   Distribution: zulu
+2025-12-04T13:50:32.4328949Z   Version: 17.0.17+10
+2025-12-04T13:50:32.4329512Z   Path: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.17-10/x64
+2025-12-04T13:50:32.4329988Z 
+2025-12-04T13:50:32.4330663Z ##[endgroup]
+2025-12-04T13:50:32.4357844Z Creating settings.xml with server-id: github
+2025-12-04T13:50:32.4358508Z Writing to /home/runner/.m2/settings.xml
+2025-12-04T13:50:32.5379880Z ##[group]Run actions/cache@v4
+2025-12-04T13:50:32.5380189Z with:
+2025-12-04T13:50:32.5380437Z   path: ~/.gradle/caches
+~/.gradle/wrapper
+
+2025-12-04T13:50:32.5380909Z   key: Linux-gradle-4976d024efa99077c52f0ae6c29542153aeb66f70a7a74ba180bb8cb941c03f5
+2025-12-04T13:50:32.5381860Z   restore-keys: Linux-gradle-
+
+2025-12-04T13:50:32.5382155Z   enableCrossOsArchive: false
+2025-12-04T13:50:32.5382431Z   fail-on-cache-miss: false
+2025-12-04T13:50:32.5382681Z   lookup-only: false
+2025-12-04T13:50:32.5382916Z   save-always: false
+2025-12-04T13:50:32.5383133Z env:
+2025-12-04T13:50:32.5383416Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.17-10/x64
+2025-12-04T13:50:32.5383839Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.17-10/x64
+2025-12-04T13:50:32.5384182Z ##[endgroup]
+2025-12-04T13:50:32.7637213Z Cache not found for input keys: Linux-gradle-4976d024efa99077c52f0ae6c29542153aeb66f70a7a74ba180bb8cb941c03f5, Linux-gradle-
+2025-12-04T13:50:32.7718230Z ##[group]Run chmod +x gradlew
+2025-12-04T13:50:32.7718551Z [36;1mchmod +x gradlew[0m
+2025-12-04T13:50:32.7755221Z shell: /usr/bin/bash -e {0}
+2025-12-04T13:50:32.7755532Z env:
+2025-12-04T13:50:32.7755788Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.17-10/x64
+2025-12-04T13:50:32.7756172Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.17-10/x64
+2025-12-04T13:50:32.7756493Z ##[endgroup]
+2025-12-04T13:50:32.7865816Z ##[group]Run ./gradlew assembleDebug --stacktrace
+2025-12-04T13:50:32.7866174Z [36;1m./gradlew assembleDebug --stacktrace[0m
+2025-12-04T13:50:32.7896219Z shell: /usr/bin/bash -e {0}
+2025-12-04T13:50:32.7896446Z env:
+2025-12-04T13:50:32.7896692Z   JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.17-10/x64
+2025-12-04T13:50:32.7897089Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Zulu_jdk/17.0.17-10/x64
+2025-12-04T13:50:32.7897391Z ##[endgroup]
+2025-12-04T13:50:32.8366040Z Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain
+2025-12-04T13:50:32.8366861Z Caused by: java.lang.ClassNotFoundException: org.gradle.wrapper.GradleWrapperMain
+2025-12-04T13:50:32.8417044Z ##[error]Process completed with exit code 1.
+2025-12-04T13:50:32.8528476Z Post job cleanup.
+2025-12-04T13:50:33.0275157Z Post job cleanup.
+2025-12-04T13:50:33.1262772Z [command]/usr/bin/git version
+2025-12-04T13:50:33.1303306Z git version 2.52.0
+2025-12-04T13:50:33.1348466Z Temporarily overriding HOME='/home/runner/work/_temp/6ce88039-ed94-4db3-8bda-834fd2c5ca31' before making global git config changes
+2025-12-04T13:50:33.1349901Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-04T13:50:33.1362628Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/BlockShutdownAndroid/BlockShutdownAndroid
+2025-12-04T13:50:33.1398783Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-12-04T13:50:33.1433757Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-12-04T13:50:33.1700324Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-04T13:50:33.1722654Z http.https://github.com/.extraheader
+2025-12-04T13:50:33.1735825Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-12-04T13:50:33.1767881Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-12-04T13:50:33.1986181Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-04T13:50:33.2016186Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2025-12-04T13:50:33.2330625Z Cleaning up orphan processes
