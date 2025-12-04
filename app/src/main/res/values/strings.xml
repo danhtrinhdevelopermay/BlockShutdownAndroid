@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PowerGuard</string>
+    <string name="accessibility_service_description">Dịch vụ này giám sát và bảo vệ thiết bị của bạn khỏi việc tắt nguồn hoặc khởi động lại trái phép. Khi phát hiện thao tác tắt/khởi động lại, ứng dụng sẽ yêu cầu xác thực mật khẩu.</string>
+    
+    <string name="protection_status">Trạng thái bảo vệ</string>
+    <string name="protection_enabled">Bảo vệ đang BẬT</string>
+    <string name="protection_disabled">Bảo vệ đang TẮT</string>
+    <string name="enable_protection">Bật bảo vệ</string>
+    <string name="disable_protection">Tắt bảo vệ</string>
+    
+    <string name="password_settings">Cài đặt mật khẩu</string>
+    <string name="set_password">Đặt mật khẩu</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="enter_password">Nhập mật khẩu</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="current_password">Mật khẩu hiện tại</string>
+    <string name="password_hint">Ít nhất 4 ký tự</string>
+    <string name="password_mismatch">Mật khẩu không khớp</string>
+    <string name="password_too_short">Mật khẩu phải có ít nhất 4 ký tự</string>
+    <string name="password_set_success">Đặt mật khẩu thành công</string>
+    <string name="password_incorrect">Mật khẩu không đúng</string>
+    
+    <string name="permissions">Quyền truy cập</string>
+    <string name="accessibility_permission">Quyền Accessibility</string>
+    <string name="accessibility_permission_desc">Cần thiết để phát hiện menu nguồn</string>
+    <string name="overlay_permission">Quyền hiển thị trên ứng dụng khác</string>
+    <string name="overlay_permission_desc">Cần thiết để hiển thị màn hình mật khẩu</string>
+    <string name="grant_permission">Cấp quyền</string>
+    <string name="permission_granted">Đã cấp</string>
+    <string name="permission_not_granted">Chưa cấp</string>
+    
+    <string name="shizuku">Shizuku</string>
+    <string name="shizuku_status">Trạng thái Shizuku</string>
+    <string name="shizuku_connected">Đã kết nối</string>
+    <string name="shizuku_disconnected">Chưa kết nối</string>
+    <string name="shizuku_not_installed">Shizuku chưa được cài đặt</string>
+    <string name="shizuku_description">Shizuku cho phép chặn sâu hơn các thao tác tắt nguồn</string>
+    <string name="connect_shizuku">Kết nối Shizuku</string>
+    <string name="install_shizuku">Cài đặt Shizuku</string>
+    
+    <string name="settings">Cài đặt</string>
+    <string name="about">Thông tin</string>
+    <string name="version">Phiên bản</string>
+    
+    <string name="power_action_detected">Phát hiện thao tác nguồn!</string>
+    <string name="enter_password_to_continue">Nhập mật khẩu để tiếp tục</string>
+    <string name="shutdown">Tắt nguồn</string>
+    <string name="restart">Khởi động lại</string>
+    <string name="cancel">Hủy</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="ok">OK</string>
+    <string name="save">Lưu</string>
+    
+    <string name="notification_channel_name">Bảo vệ nguồn</string>
+    <string name="notification_channel_description">Thông báo khi dịch vụ bảo vệ đang chạy</string>
+    <string name="notification_title">PowerGuard đang hoạt động</string>
+    <string name="notification_text">Bảo vệ thiết bị khỏi tắt/khởi động lại trái phép</string>
+</resources>

@@ -32,15 +32,15 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Website"
+args = "Documentation Server"
 
 [[workflows.workflow]]
-name = "Website"
+name = "Documentation Server"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npx -y http-server -p 5000 -c-1"
+args = "node server.js"
 waitForPort = 5000
 
 [workflows.workflow.metadata]
@@ -53,6 +53,10 @@ externalPort = 80
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[[ports]]
+localPort = 37629
+externalPort = 3000
 
 [agent]
 expertMode = true

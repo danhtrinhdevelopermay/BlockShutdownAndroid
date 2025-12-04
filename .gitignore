@@ -1,0 +1,40 @@
+# Gradle files
+.gradle/
+build/
+!gradle-wrapper.jar
+
+# Local configuration file
+local.properties
+
+# IntelliJ
+*.iml
+.idea/
+
+# Android Studio
+*.apk
+*.ap_
+*.dex
+*.class
+*.log
+
+# Generated files
+bin/
+gen/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keystore files
+*.jks
+*.keystore
+
+# Android Studio captures folder
+captures/
+
+# NDK
+obj/
+
+# Node modules (for info page)
+node_modules/
